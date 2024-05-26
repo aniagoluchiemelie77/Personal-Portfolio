@@ -1,122 +1,52 @@
-body {font-family:"sofia", sans-serif;
-    color: black;
-    line-height: 1.0em;
-    text-align: center;
-  max-width: 500px;
-  font-weight: 700;
-  background-color: white;
-  }
-    .avatar  {
-  vertical-align: middle;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; 
 }
-.button-84 {
- align-items: center;
- background-color: initial;
- padding-top: 10px;
- background-image: linear-gradient(#464d55, #25292e);
- border-radius: 8px;
- border-width: 0;
- box-shadow: 0 10px 10px rgba(0, 0, 0, .1),0 3px 6px rgba(0, 0, 0, .05);
- box-sizing: border-box;
- color: #fff;
- cursor: pointer;
- display: inline-flex;
- flex-direction: column;
- font-family: expo-brand-demi,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
- font-size: 18px;
- height: 52px;
- justify-content: center;
- line-height: 1;
- margin: 0;
- outline: none;
- overflow: hidden;
- padding: 0 32px;
- text-align: center;
- text-decoration: none;
- transform: translate3d(0, 0, 0);
- transition: all 150ms;
- vertical-align: baseline;
- white-space: nowrap;
- user-select: none;
- -webkit-user-select: none;
- touch-action: manipulation;
- 
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-behavior: cubic-bezier(0.2, 0, 0.38, 1);
 }
-
-.button-84:hover {
- box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
- opacity: .65;
+.container{
+    background-color: black;
 }
-
-.button-84:active {
- outline: 0;
+.navbar{
+    background-color: aqua;
+    min-height: fit-content;
 }
-.subscribe-box 
-   h2 Subscribe to our mailing list
-.subscribe-box { 
-        padding-bottom: 10px;
-       input(type="email", placeholder="example@gmail.com", autocomplete="off" required)
-       button(type="submit") 
-           span Subscribe
+.Introduction{
+    background-color: blue;
+    min-height: 70vh;
 }
-
-.button-84:focus {
- box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
+.About{
+    background-color: chartreuse;
+    min-height: 70vh;
 }
-
-@media (max-width: 420px) {
- .button-84 {
-   height: 48px;
- }
- a {
-     text-decoration: none;
-     color: orange; 
-     font-weight: 700;
- }
- a:hover {
-     color: blue;
-     text-decoration: underline;
- }
- a:active { 
- text-decoration: underline;
- }
- ul{
-     list-style-type: none;
-     margin: 0;
-     padding: 0;
-     overflow: hidden;
-     background-color: orange;
-     }
- li {
-     float: left;
- }
- li a {
-     display: block;
-     color: black;
-     padding-top: 10px;
-     padding-left: 20px;
-     padding-bottom: 10px;
-     font-weight: 700;  
-     font-family: system-ui;
-     }
-       .subscribe-box 
-   h2 Subscribe to our mailing list
-   form.subscribe
-       input(type="email", placeholder="example@gmail.com", autocomplete="off" required)
-       button(type="submit") 
-           span Subscribe 
- }
- li a:active {
-     text-decoration: underline;
-     color: #ffef8f31;
- }
- .navbar{
-     padding-bottom: 10px;
-     }
- .links{
-     line-height: 1px;
-     }
+.services{
+    background-color: gold;
+    min-height: 50vh;
+}
+.workexamples{
+    background-color: red;
+    min-height: 70vh;
+}
+.smediahandles{
+    background-color: brown;
+    min-height: 80vh;
+}
+.contactinfo{
+    background-color: goldenrod;
+    min-height: 80vh;
+}
+.comments{
+    background-color: grey;
+    min-height: 60vh;
+}
+.footer{
+    background-color: purple;
+    min-height: min-content;
+}

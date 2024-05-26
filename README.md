@@ -1,2 +1,3 @@
-#C-net card 
-The C-net Card is an online ID that can be used by individuals and companies to show brief details about them. The details can include hotline, address, emails, brief description of the what the company or individual does, with the company's logo.
+Personal Portfolio
+This webpage is primarily an overview of the author, his contacts, his projects, and other portfolio related information.
+This webpage will be continuously updated to accomodate further achievements of the author.

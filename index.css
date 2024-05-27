@@ -12,41 +12,80 @@ html{
     scroll-behavior: cubic-bezier(0.2, 0, 0.38, 1);
 }
 .container{
+    padding: 2rem;
+    position: relative;
+    line-height: 1.4;
+    font-weight: 400;
+    font-family: 'Space Grotesk', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: black;
 }
 .navbar{
     background-color: aqua;
-    min-height: fit-content;
+    width: 15vw;
+    margin: 1rem;
+    height: 100%;
+    background-color: black;
 }
 .Introduction{
-    background-color: blue;
-    min-height: 70vh;
+    min-height: 95vh;
+    width: 100%;
+    padding: 2rem;
+    background-image: url("images/img1.jpeg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .About{
-    background-color: chartreuse;
-    min-height: 70vh;
+    background-color: black;
+    margin-top: 1rem;
+    min-height: 60vh;
+    width: 70vw;
 }
 .services{
     background-color: gold;
     min-height: 50vh;
+    width: 70vw;
 }
 .workexamples{
     background-color: red;
     min-height: 70vh;
+    width: 70vw;
 }
 .smediahandles{
     background-color: brown;
     min-height: 80vh;
+    width: 70vw;
 }
 .contactinfo{
     background-color: goldenrod;
     min-height: 80vh;
+    width: 70vw;
 }
 .comments{
     background-color: grey;
     min-height: 60vh;
+    width: 70vw;
 }
 .footer{
     background-color: purple;
     min-height: min-content;
+}
+.navbar__links{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    align-content: center;
+}
+.navbar__links > li{
+    text-decoration: none;
+    padding: 1rem;
 }

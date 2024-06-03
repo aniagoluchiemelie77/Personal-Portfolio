@@ -15,10 +15,10 @@
     <title>Chiemelie Aniagolu's Portfolio</title>
 </head>
 <body class="container">
-      <section class="navbar" id="sec1">
-            <div class="navbar__image">
+      <section class="navbar border-gradient border-gradient-green" id="sec1">
+            <div class="navbar__image" id="imagebox">
                   <figure>
-                        <img class="navbar__figure" src="images/DSC_0290 (1) (1).jpg"/>
+                        <img class="navbar__figure" id="img" src="images/DSC_0290 (1) (1).jpg" style="width: 100%"/>
                         <figcaption class="navbar__figure-caption">Chiemelie</figcaption>
                   </figure>
                   <p class="navbar__image-p">
@@ -36,22 +36,102 @@
       </section>
       <section class="Introduction" id="sec2">
             <div class="Introduction__divcontainer">
-                  <p class="intro__p">Name: Aniagolu Chiemelie V.</p>
+                  <h1 class="intro__p">Name: Aniagolu Chiemelie V.</h1>
             </div>
       </section>
-      <section class="about border-gradient border-gradient-green" id="about">
-                  <div class="about__div1">
-                        <p class="contact">Phone:<a href="tel:+2349122312493" class="contact"> 09122312493</a></p>
+      <section class="about" id="about">
+                  <div class="about__div1-container">
+                        <div class="tab">
+                              <button class="tablinks colorfulheader">About</button>
+                              <button class="tablinks colorfulheader">Skills</button>
+                        </div>
+                        <div class="tabcontent" id="about">
+                              <p class="about__paragraph">Chiemelie Aniagolu is a skilled Website Front-end developer. He is currently a student at the Federal University of Petroleum Resources Effurun, Delta State. Nigeria.
+                                    <span> He is proficient in Front-end skills like HTML, CSS, SCSS, JAVASCRIPT, and others. He is easy-going and always ready to learn </span>
+                              </p>
+                        </div>
+                        <div class="skills tabcontent" id="skills">
+                              <div class="skills__1 skills__div">
+                                    <p>0%</p>
+                                    <p>50%</p>
+                                    <p>100%</p>
+                              </div>
+                              <p class="skills__1-p">HTML</p>
+                              <div class="skills__2 skills__div"></div>
+                              <p class="skills__1-p">CSS</p>
+                              <div class="skills__3 skills__div"></div>
+                              <p class="skills__1-p">JAVASCRIPT</p>
+                              <div class="skills__4 skills__div"></div>
+                              <p class="skills__1-p">Front-end Website Security</p>
+                        </div>
                   </div>
                   <div class="about__div2">
-                        <img class="about__img" src="images/DSC_0290 (1) (1).jpg"/>
+                        <figure class="about--picture">
+                              <img src="images/DSC_0290 (1) (1).jpg" class="about__img" alt="Author's picture" style="width: 100%" >
+                              <figcaption>
+                                  Aniagolu Chiemelie
+                              </figcaption>
+                        </figure>
                   </div>
       </section>
       <section class="services" id="services">
-            <div id="links">
-                  <p class="smedia contact">My social media links:</p>
-                  <a href="https://twitter.com/vik_chiboy?t=BmYUUC32xOwFkh6uUbQvcQ&s=09">Twitter</a>
-                  <p class="FB" ><a href="https://www.facebook.com/chiboy.aniagolu.3">Facebook</a></p>
+            <div class="services__header">
+                  <h2 class="header2 colorfulheader">Services I offer</h2>
+            </div>
+            <div class="services__container1">
+                  <h3 class="header">Dynamic Websites</h3> 
+                    <table>
+                        <tr>
+                            <th>Plan A</th>
+                            <th>Plan B</th>
+                            <th>Plan C</th>
+                        </tr>
+                        <tr>
+                            <td> $1500.00 articles topic cluster.</td>
+                            <td> $3500.00 for free 1 year website management.</td>
+                            <td> 10% off 1 year website management.</td>
+                        </tr>
+                    </table>
+                    <div class="services__container1-div1">
+                        <h4 class="header1">Features</h4>
+                    </div>
+                    <ul class="services__container1__list1">
+                        <li>Keyword and competitor reaseach for money and feature-focused keywords.</li>
+                        <li> Insights on the most talked about niche topics/keywords from BuzzSumo, Twitter, Reddit and LinkedIn. </li>
+                        <li> Insights from your sales and customer management teams to uncover your audience's pain points and unanswered questions.</li>
+                        <li> Minimum of 10 topics around a single keyword to build authority and convert.</li>
+                        <li> Detailed content briefs per topic to highlight the reader's buying stage and avoid unecessary information during writing.</li>
+                        <li> Semantic entity extraction.</li>
+                        <li>Internal and external link recommendation.</li>
+                    </ul>
+        </div>
+            </div>
+            <div class="services__container2">
+                  <h3 class="header">Static Websites</h3> 
+                    <table>
+                        <tr>
+                            <th>Plan A</th>
+                            <th>Plan B</th>
+                            <th>Plan C</th>
+                        </tr>
+                        <tr>
+                            <td> $400.00</td>
+                            <td> $600.00 plus free 1 year website maintenance, deployment</td>
+                            <td> $400.00 </td>
+                        </tr>
+                    </table>
+                    <div class="services__container2-div1">
+                        <h4 class="header1">Features</h4>
+                    </div>
+                    <ul class="services__container1__list1">
+                        <li>Keyword and competitor reaseach for money and feature-focused keywords.</li>
+                        <li> Insights on the most talked about niche topics/keywords from BuzzSumo, Twitter, Reddit and LinkedIn. </li>
+                        <li> Insights from your sales and customer management teams to uncover your audience's pain points and unanswered questions.</li>
+                        <li> Minimum of 10 topics around a single keyword to build authority and convert.</li>
+                        <li> Detailed content briefs per topic to highlight the reader's buying stage and avoid unecessary information during writing.</li>
+                        <li> Semantic entity extraction.</li>
+                        <li>Internal and external link recommendation.</li>
+                    </ul>
             </div>
       </section>
       <section class="workexamples" id="sec5">

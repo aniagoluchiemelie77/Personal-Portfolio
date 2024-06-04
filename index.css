@@ -33,7 +33,7 @@ html{
     z-index: 10;
     left: 0;
     top: 0;
-    padding: 2rem;
+    padding: 1.4rem;
     align-items: center;
 }
 .Introduction{
@@ -69,7 +69,7 @@ html{
     -o-border-radius: 2px;
 }
 .services{
-    background-color: #000000;
+    background-image: linear-gradient( to right, #000000, #222222);
     margin-left: 17vw;
     min-height: 85vh;
     display: grid;
@@ -78,11 +78,17 @@ html{
     grid-template-rows: repeat(3, min-content);
     width: calc(100% - 17vw);
     padding: 2rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
 }
 .workexamples{
-    background-color: red;
-    min-height: 70vh;
-    width: 70vw;
+    background-color: #000000;
+    min-height: 90vh;
+    width: calc(100% - 17vw);
+    margin-left: 17vw;
 }
 .smediahandles{
     background-color: brown;
@@ -111,12 +117,81 @@ html{
     padding: 2rem;
     align-content: center;
 }
-.navbar__links li{
-    text-decoration: none;
-    padding: 1.3rem;
+.navbar__li{
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    display: grid;
+    align-items: center;
+    position: relative;
+    background: inherit;
+    cursor: pointer;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    overflow: hidden;
+}
+.navbar__li:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.navbar__li::before{
+    position: absolute;
+    content: " ";
+    background: linear-gradient(to left, #00C853, #B2FF59);
+    width: 20%;
+    height: 800%;
+    opacity: 0;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+.navbar__li:hover::before{
+    animation: animate 4s linear infinite;
+    -webkit-animation: animate 4s linear infinite;
+    opacity: 1;
+}
+@keyframes animate{
+    from{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
+to{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+}
+.navbar__li::after{
+    position: absolute;
+    content: " ";
+    inset: 2px;
+    border-radius: 3px;
+    background: #000000;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.navbar__li:hover:after{
+    background-image: linear-gradient( to right, #000000, #222222);;
+}
+.navbar__li a{
+    z-index: 10;
 }
 .navbar__figure{
-    width: 90%;
+    width: auto;
     height: 25vh;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -128,27 +203,7 @@ html{
     border: #eae9e9 solid 3px;
 }
 .navbar__image p{
-    padding: 1rem;
-}
-  .navbar__links  li:hover {
-    border: 10px solid;
-    border-image-slice: 1;
-    border-width: 5px;
-    border-image-source: linear-gradient(to left, #00C853, #B2FF59);
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 0;
-    transform: scale(1.1);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    background-image: linear-gradient( to right, #000000, #222222);
-    border-radius: 1px;
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
-    -ms-border-radius: 1px;
-    -o-border-radius: 1px;
+    padding: .9rem 0 0 0;
 }
   a, p, li{
     text-decoration: none;
@@ -218,8 +273,20 @@ html{
     -ms-transform: translate(0, 0);
     -o-transform: translate(0, 0);
 }*/
+.about__paragraph{
+    max-width: 33vw;
+    padding: 1.5rem 0 0 0;
+    line-height: 1.5;
+}
+.about__paragraph span{
+    display: inline-block;
+    padding-top: 2.3rem;
+}
 .about__div1-container{
     width: 40vw;
+}
+.skills{
+    opacity: 0;
 }
 .skills p{
     padding: 1rem 0 1rem 0;

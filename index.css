@@ -295,6 +295,59 @@ to{
   .intro__p{
     font-size: 4.5rem;
   }
+  .tab{
+    position: relative;
+  }
+  .tab .tablinks{
+    color: #eae9e9;
+    font-weight: 700;
+  }
+  .tab .tablinks.active{
+    background-image: linear-gradient(to right, #00C853, #B2FF59);
+    -webkit-background-clip: text;
+    background-clip: text;
+    border-radius: 2rem;
+    color: transparent;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+.tab .line{
+    position: absolute;
+    border-radius: 1rem;
+    top: 4.9rem;
+    left: 0;
+    width: 12.6rem;
+    height: .4rem;
+    background-image: linear-gradient(to right, #00C853, #B2FF59);
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.tabcontent__container{
+    height: 42vh;
+    padding: 1rem 0 0 0;
+}
+.tabcontent__container .tabcontent{
+    animation: moving .6s ease;
+    display: none;
+    -webkit-animation: moving .6s ease;
+}
+.tabcontent__container .tabcontent.active{
+    display: block;
+}
   .border-gradient {
     border: 10px solid;
     border-image-slice: 1;
@@ -308,6 +361,17 @@ to{
   .colorfulheader{
     background-image: linear-gradient(to right, #00C853, #B2FF59);
   }
+  .about__div2 {
+    border:  #B2FF59 10px solid;
+    padding: 1rem;
+    border-image-slice: 1;
+    border-radius: 3px;
+    border-width: 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
 .about__img{
     border-radius: 2rem;
     filter: grayscale(50);
@@ -331,6 +395,11 @@ to{
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: all .7s;
+    -moz-transition: all .7s;
+    -ms-transition: all .7s;
+    -o-transition: all .7s;
 }*/
 /*.about__div2:hover figcaption{
     opacity: 1;
@@ -354,7 +423,7 @@ to{
     width: 40vw;
 }
 .skills{
-    opacity: 0;
+    padding: 3.2rem 0 0 0;
 }
 .skills p{
     padding: 1rem 0 1rem 0;
@@ -425,11 +494,10 @@ tbody tr:nth-child(odd){
     background-color: #000000;
   }
   .tab button {
-    background-color: inherit;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 2rem 3rem;
+    padding: 2rem 4rem;
     display: inline-block;
     -webkit-background-clip: text;
     background-clip: text;

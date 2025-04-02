@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
       <meta charset="UTF-8"/>
-      <meta name="viewport" content="width=device-width" initial-scale="1.0"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
       <meta name="description" content="Online Portfolio" />
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
       <meta name="author" content="Chiboy Aniagolu"/>
       <link rel="stylesheet" 
@@ -15,25 +16,6 @@
     <title>Chiemelie Aniagolu's Portfolio</title>
 </head>
 <body class="container">
-      <section class="navbar border-gradient border-gradient-green" id="sec1">
-            <div class="navbar__image" id="imagebox">
-                  <figure>
-                        <img class="navbar__figure" id="img" src="images/DSC_0290 (1) (1).jpg" style="width: 100%"/>
-                        <figcaption class="navbar__figure-caption">Chiemelie</figcaption>
-                  </figure>
-                  <p class="navbar__image-p">
-                        Front-end Web Developer | Member SPE Warri section 104
-                  </p>
-            </div>
-            <ul class="navbar__links">
-                <li class="navbar__link1 navbar__li"><a href="#about">About me</a></li>
-                <li class="navbar__link2  navbar__li"><a href="#services">Services I Offer</a></li>
-                <li class="navbar__link3  navbar__li"><a href="#">Projects and Partnerships</a></li>
-                <li class="navbar__link4  navbar__li"><a href="#">Social Media Handles</a></li>
-                <li class="navbar__link5  navbar__li"><a href="#">Contact Info</a></li>
-                <li class="navbar__link6  navbar__li"><a href="#">Clients Remarks</a></li>
-            </ul>
-      </section>
       <section class="Introduction" id="sec2">
             <div class="intro-animation-box1"></div>
             <div class="intro-animation-box2"></div>
@@ -51,8 +33,8 @@
                         </div>
                         <div class="tabcontent__container">
                               <div class="tabcontent active" id="about">
-                                    <p class="about__paragraph">Chiemelie Aniagolu is a skilled Website Front-end developer with more than 2 years of websites development and maintenance experience. He is currently a student at the Federal University of Petroleum Resources Effurun, Delta State. Nigeria.
-                                          <span> He is highly proficient in IT-related skills like HTML, CSS, SCSS, JAVASCRIPT with certificates of the relevant skills from Udemy.</span>
+                                    <p class="about__paragraph">Chiemelie Aniagolu is a skilled Website Front-end developer with more than 3 years of websites development and maintenance experience. He is currently a student at the Federal University of Petroleum Resources Effurun, Delta State. Nigeria.
+                                          <span> He is highly proficient in IT-related skills like HTML, CSS, SCSS, JAVASCRIPT, PHP with certificates from Udemy.</span>
                                     </p>
                               </div>
                               <div class="skills tabcontent" id="skills">
@@ -67,7 +49,7 @@
                                     <div class="skills__3 skills__div"></div>
                                     <p class="skills__1-p">JAVASCRIPT</p>
                                     <div class="skills__4 skills__div"></div>
-                                    <p class="skills__1-p">Front-end Website Security</p>
+                                    <p class="skills__1-p">PHP</p>
                               </div>
                         </div>
                         </div>
@@ -80,107 +62,121 @@
                         </figure>
                   </div>
       </section>
-      <section class="services" id="services">
+      <section class="workexamples" id="sec5">
             <div class="services__header">
-                  <h2 class="header2 colorfulheader">Services I offer</h2>
+                  <h2 class="header2 colorfulheader">Featured Projects</h2>
             </div>
-            <div class="services__container1">
-                  <h3 class="header">Dynamic Websites</h3> 
-                    <table>
-                        <tr>
-                            <th>Plan A</th>
-                            <th>Plan B</th>
-                            <th>Plan C</th>
-                        </tr>
-                        <tr>
-                            <td> $1500.00 articles topic cluster.</td>
-                            <td> $3500.00 for free 1 year website management.</td>
-                            <td> 10% off 1 year website management.</td>
-                        </tr>
-                    </table>
-                    <div class="services__container1-div1">
-                        <h4 class="header1">Features</h4>
-                    </div>
-                    <ul class="services__container1__list1">
-                        <li>Keyword and competitor reaseach for money and feature-focused keywords.</li>
-                        <li> Insights on the most talked about niche topics/keywords from BuzzSumo, Twitter, Reddit and LinkedIn. </li>
-                        <li> Insights from your sales and customer management teams to uncover your audience's pain points and unanswered questions.</li>
-                        <li> Minimum of 10 topics around a single keyword to build authority and convert.</li>
-                        <li> Detailed content briefs per topic to highlight the reader's buying stage and avoid unecessary information during writing.</li>
-                        <li> Semantic entity extraction.</li>
-                        <li>Internal and external link recommendation.</li>
-                    </ul>
-        </div>
+            <div class="workexamples_projects__container">
+                  <div class="workexamples_projects">
+                        <h3 class="colorfulheader">Javascript Projects</h3>
+                        <div class="workexamples_projects_subdiv">
+                              <div class="workexamples_project_frames">
+                                    <iframe src="https://uniquetechcontentwriter.com" 
+                                    style="width: 100%; height: 100%; border: none; overflow: hidden;"></iframe>
+                                    <p>A Landing page project</p>
+                                    <a href="https://uniquetechcontentwriter.com" target="_blank">View</a href="">
+                              </div>
+                              <div class="workexamples_project_frames">
+                                    <iframe src="https://uniquetechcontentwriter.com" 
+                                    style="width: 100%; height: 100%; border: none; overflow: hidden;"></iframe>
+                                    <p>A Landing page project</p>
+                                    <a href="">View</a href="">
+                              </div>
+                              <div class="workexamples_project_frames">
+                                    <iframe src="https://uniquetechcontentwriter.com" 
+                                    style="width: 100%; height: 100%; border: none; overflow: hidden;"></iframe>
+                                    <p>A Landing page project</p>
+                                    <a href="">View</a href="">
+                              </div>
+                        </div>
+                  </div>
+                  <div class="workexamples_projects">
+                        <h3 class="colorfulheader">PHP Projects</h3>
+                        <div class="workexamples_projects_subdiv">
+                              <div class="workexamples_project_frames">
+                                    <iframe src="https://uniquetechcontentwriter.com" 
+                                    style="width: 100%; height: 100%; border: none; overflow: hidden;"></iframe>
+                                    <p>A Landing page project</p>
+                                    <a href="">View</a href="">
+                              </div>
+                              <div class="workexamples_project_frames">
+                                    <iframe src="https://uniquetechcontentwriter.com" 
+                                    style="width: 100%; height: 100%; border: none; overflow: hidden;"></iframe>
+                                    <p>A Landing page project</p>
+                                    <a href="">View</a href="">
+                              </div>
+                              <div class="workexamples_project_frames">
+                                    <iframe src="https://uniquetechcontentwriter.com" 
+                                    style="width: 100%; height: 100%; border: none; overflow: hidden;"></iframe>
+                                    <p>A Landing page project</p>
+                                    <a href="">View</a href="">
+                              </div>
+                        </div>
+                  </div>
             </div>
-            <div class="services__container2">
-                  <h3 class="header">Static Websites</h3> 
-                    <table>
-                        <tr>
-                            <th>Plan A</th>
-                            <th>Plan B</th>
-                            <th>Plan C</th>
-                        </tr>
-                        <tr>
-                            <td> $400.00</td>
-                            <td> $600.00 plus free 1 year website maintenance, deployment</td>
-                            <td> $400.00 </td>
-                        </tr>
-                    </table>
-                    <div class="services__container2-div1">
-                        <h4 class="header1">Features</h4>
-                    </div>
-                    <ul class="services__container1__list1">
-                        <li>Keyword and competitor reaseach for money and feature-focused keywords.</li>
-                        <li> Insights on the most talked about niche topics/keywords from BuzzSumo, Twitter, Reddit and LinkedIn. </li>
-                        <li> Insights from your sales and customer management teams to uncover your audience's pain points and unanswered questions.</li>
-                        <li> Minimum of 10 topics around a single keyword to build authority and convert.</li>
-                        <li> Detailed content briefs per topic to highlight the reader's buying stage and avoid unecessary information during writing.</li>
-                        <li> Semantic entity extraction.</li>
-                        <li>Internal and external link recommendation.</li>
-                    </ul>
+      </section>
+      <section class="workexamples2" id="sec5">
+            <div class="services__header">
+                  <h2 class="header2 colorfulheader">Certifications</h2>
+            </div>
+            <div class="workexamples_projects__container">
+                  <div class="workexamples_projects">
+                        <div class="workexamples_projects_subdiv">
+                              <div class="workexamples_project_frames2">
+                                    <img src="images/certificate1.jpeg" >
+                                    <p>Complete Javascript Course 2024: From Zero to Expert!</p>
+                                    <p>By Jonas Schemdtmann</p>
+                              </div>
+                              <div class="workexamples_project_frames2">
+                                    <img src="images/certificate2.jpeg" >
+                                    <p>Advanced CSS and SASS: Flexbox, Grid, Animations and More!</p>
+                                    <p>By Jonas Schemdtmann</p>
+                              </div>
+                              <div class="workexamples_project_frames2">
+                                    <img src="images/certificate3.jpeg" >
+                                    <p>Introduction to CSS</p>
+                                    <p>Sololearn</p>
+                              </div>
+                        </div>
+                  </div>
             </div>
       </section>
       <section class="workexamples" id="sec5">
-            <div class="side">
-                  <p class="ebe">Place of Residence: Independence layout, Enugu state.</p>
-                  <p class="school">Current school: FUPRE, Delta State, Nigeria</p>
-           </div>
-      </section>
-      <section class="smediahandles" id="sec6">
-            <div class="finish">
-                  <p class="nish">If you have any complaints about my work on this website, You can inbox me via your email.</p>
-                  <form    class="subscribe-box" 
-                            action="" 
-                           method="get">
-                       <div class="form-example">
-                            <input type="email" 
-                                   name="email"
-                                   id="email" required
-                                   placeholder="email address">
-                       </div>
-                   </form>
-                  <button class="button-84" role="button">Submit</button>
-                 </div>
-      </section>
-      <section class="contactinfo" id="sec6">
-            <div class="finish">
-                  <p class="nish">If you have any complaints about my work on this website, You can inbox me via your email.</p>
-                  <button class="button-84" role="button">Submit</button>
-                 </div>
-      </section>
-      <section class="comments" id="sec7">
-            <div class="finish">
-                  <p class="nish">If you have any complaints about my work on this website, You can inbox me via your email.</p>
-                  <button class="button-84" role="button">Submit</button>
-                 </div>
-      </section>
-      <section class="footer" id="sec8">
-            <div class="finish">
-                  <p class="nish">If you have any complaints about my work on this website, You can inbox me via your email.</p>
-                  <button class="button-84" role="button">Submit</button>
+            <div class="services__header">
+                  <h2 class="header2 colorfulheader">Testimonials</h2>
             </div>
       </section>
-             <script src="index.js"></script>
+      <section class="services" id="services">
+            <div class="services__header">
+                  <h2 class="header2 colorfulheader">Connect With Me</h2>
+            </div>
+            <div class="services_container">
+                  <a href="https://github.com/aniagoluchiemelie77" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        <p>Github</p>
+                  </a>
+                  <a href="www.linkedin.com/in/chiemelie-aniagolu-7799b32b0" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <p>LinkedIn</p></a>
+                  <a href="https://twitter.com/vik_chiboy?t=iQtE1oExu2tqvoCBJbcTfg&s=09" target="_blank">
+                        <i class="fa-brands fa-square-x-twitter"></i>
+                        <p>X</p>
+                  </a>
+                  <a href="https://web.facebook.com/chiboy.aniagolu.3/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>Facebook</p>
+                  </a>
+                  <a href="https://www.youtube.com/@Code_buddy042/videos" target="_blank">
+                        <i class="fa-brands fa-youtube"></i>
+                        <p>Youtube</p>
+                  </a>
+                  <a href="mailto:chiboyaniagolu3@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>Gmail</p>
+                  </a>
+            </div>
+      </section>
+      <script src="index.js"></script>
  </body>
  </html>
  
